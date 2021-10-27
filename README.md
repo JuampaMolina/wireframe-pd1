@@ -16,7 +16,7 @@
 ### Mejoras que incorpora nuestra solución:
 
 - Simplicidad y limpieza, haciendo de la aplicación web un uso mucho mas sencillo.
-- Concepto de simplicidad aplicado al uso de forma que,
+- Concepto de simplicidad aplicado al uso de forma que, tiene que haber los elementos en la aplicación que realmente son útiles para el usuario.
 - Reducir las interacciones del usuario para llegar a su finalidad de uso.
 - Desde la pagina principal (vista escritorio) podemos a todas las funcionalidades principales
 - En lugar de mostrar principalmente el horario completo de cada una de las líneas, creemos que en la mayoría de casos es más usable y conveniente mostrar los buses/trenes/metro que pasan en la parada deseada, junto a la hora de llegada exacta de cada uno, además, también mantenemos la opción de visualizar el horario completo de la linea deseada por si es necesario.
