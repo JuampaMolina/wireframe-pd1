@@ -1,0 +1,110 @@
+:root {
+  --main-color: #1a335d;
+  --light-color: #f7f9ff;
+  --dark-color: #1d1d35;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: var(--dark-color);
+}
+
+body {
+  background: var(--light-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+section.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.logo-container {
+  width: 4em;
+}
+
+div.logo-container img {
+  width: 100%;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: var(--light-color);
+  background: var(--main-color);
+}
+
+div.form {
+  width: 80%;
+  margin: 16px 0;
+}
+
+div.form .selector {
+  width: 60%;
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--main-color);
+  padding: 8px;
+}
+
+div.form .selector a {
+  color: var(--light-color);
+  text-align: center;
+}
+
+div.input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid var(--main-color);
+  position: relative;
+}
+
+div.input small {
+  position: absolute;
+  top: -22px;
+}
+
+div.input:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+div.form .button {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 32px;
+  border-radius: 8px;
+  background: var(--main-color);
+  padding: 8px;
+  color: var(--light-color);
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: fixed;
+  bottom: 0;
+  background: var(--main-color);
+
+  border-radius: 12px 12px 0 0;
+}
+
+nav a {
+  color: var(--light-color);
+  font-weight: 700;
+  text-align: center;
+}
