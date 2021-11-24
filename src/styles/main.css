@@ -20,12 +20,6 @@ a {
   text-decoration: none;
 }
 
-.active_page {
-  border-bottom: 4px solid var(--light-color);
-  padding-bottom: 12px;
-  border-radius: 2px;
-}
-
 section.main {
   display: flex;
   flex-direction: column;
@@ -48,42 +42,48 @@ h1 {
   background: var(--main-color);
 }
 
-div.form {
+form {
   width: 80%;
   margin: 16px 0;
+  display: flex;
+  flex-direction: column;
 }
 
-div.form .selector {
+form .selector {
   width: 60%;
   display: grid;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border-radius: 8px;
   grid-template-columns: repeat(3, 1fr);
   background: var(--main-color);
   border: 2px solid var(--main-color);
 }
 
-div.form .selector a {
+form .selector a {
   text-align: center;
   transition: all 0.2s ease;
   border-radius: 6px;
 }
 
-div.form .selector a:hover {
+form .selector a:hover {
   background: var(--light-color);
 }
 
-div.form .selector a i {
+form .selector a i {
   color: var(--light-color);
   padding: 8px;
 }
 
-div.form .selector a:hover i {
+form .selector a:hover i {
   color: var(--main-color);
 }
 
-div.input {
+form div {
+  margin: 12px;
+}
+
+form div input {
   width: 100%;
   padding: 20px;
   border-radius: 8px;
@@ -91,29 +91,29 @@ div.input {
   position: relative;
 }
 
-div.input small {
-  position: absolute;
-  top: -22px;
+form div label {
+  margin: 6px;
 }
 
-div.input:nth-child(2) {
-  margin-bottom: 32px;
-}
-
-div.form .button {
+form button {
   width: 40%;
+  cursor: pointer;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 20px;
+  border: 2px solid var(--main-color);
   border-radius: 8px;
   background: var(--main-color);
   padding: 8px;
-  color: var(--light-color);
   text-align: center;
+}
+
+form button a {
+  color: var(--light-color);
 }
 
 nav {
   width: 100%;
-  padding: 20px 0;
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: fixed;
@@ -127,9 +127,24 @@ nav a {
   color: var(--light-color);
   font-weight: 700;
   text-align: center;
+  position: relative;
+}
+
+nav a::after {
+  position: absolute;
+  bottom: 0;
+  content: "";
+  background: var(--light-color);
+  height: 10px;
 }
 
 nav a i {
   color: var(--light-color);
-  font-size: 2em;
+  font-size: 1.5em;
+}
+
+.active_page {
+  border-bottom: 6px solid var(--light-color);
+  padding-bottom: 12px;
+  border-radius: 2px;
 }
