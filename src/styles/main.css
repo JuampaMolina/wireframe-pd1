@@ -195,18 +195,15 @@ div.localizame form {
   justify-self: center;
 }
 
-div.localizame form input {
+div.localizame form button {
   background: var(--main-color);
   margin: 0 auto;
   padding: 16px;
   border: 0;
   border-radius: 12px;
+  min-width: 110px;
 }
 
-div.localizame form input::placeholder {
-  color: var(--light-color);
-  text-align: center;
-}
 
 div.informacion {
   width: 90%;
@@ -222,11 +219,17 @@ div.clock-info {
 
 div.clock-info p {
   text-align: justify;
+  color: var(--dark-color);
 }
 
 div.info-button {
   display: flex;
   justify-content: center;
+}
+
+div.info-button p {
+  text-align: justify;
+  color: var(--dark-color);
 }
 
 div.three-clock {
