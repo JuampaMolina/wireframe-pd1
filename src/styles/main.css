@@ -20,7 +20,13 @@ a {
   text-decoration: none;
 }
 
-section.main {
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,6 +118,8 @@ form button a {
   color: var(--light-color);
 }
 
+/* Footer */
+
 nav {
   width: 100%;
   padding-top: 20px;
@@ -150,14 +158,16 @@ nav a i {
   border-radius: 2px;
 }
 
+/* Info parada */
+
 div.bus-stop-container {
   width: 100%;
   align-self: center;
- }
- 
- div.bus-stop-container img {
-   width: 100%;
- }
+}
+
+div.bus-stop-container img {
+  width: 100%;
+}
 
 div.parada {
   display: grid;
@@ -170,13 +180,13 @@ div.parada form {
   justify-self: center;
 }
 
-div.parada form button{
+div.parada form button {
   margin-top: 0px;
 }
 
 div.localizame {
   display: grid;
-  grid-template-columns: calc(100% - 66px) 66px ;
+  grid-template-columns: calc(100% - 66px) 66px;
   width: 75%;
   margin-top: 20px;
 }
@@ -196,4 +206,74 @@ div.localizame form input {
 div.localizame form input::placeholder {
   color: var(--light-color);
   text-align: center;
+}
+
+/* Resultados origen-destino */
+h2 {
+  text-align: center;
+}
+
+.filtros {
+  align-self: flex-end;
+  padding: 16px;
+}
+
+.filtros i {
+  color: var(--dark-color);
+  font-size: 1em;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.container .resultado {
+  display: grid;
+  width: 85%;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+  padding: 16px;
+  background: var(--main-color);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.container .resultado > i {
+  color: var(--light-color);
+  font-size: 1.5em;
+}
+
+.container .resultado div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--light-color);
+}
+
+.container .resultado div p {
+  font-size: 1.15em;
+}
+
+.container .resultado div span,
+strong,
+small,
+i,
+p {
+  color: var(--light-color);
+}
+
+.container .resultado div strong {
+  font-size: 1.5em;
+}
+
+.container .resultado div small {
+  margin-top: 6px;
+}
+
+.container .resultado div small i {
+  margin-right: 6px;
 }
