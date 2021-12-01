@@ -197,3 +197,46 @@ div.localizame form input::placeholder {
   color: var(--light-color);
   text-align: center;
 }
+
+div.informacion {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+div.clock-info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+div.clock-info p {
+  text-align: justify;
+}
+
+div.info-button {
+  display: flex;
+  justify-content: center;
+}
+
+div.three-clock {
+  width: 40px;
+  align-self: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+ }
+ 
+ div.three-clock img {
+   width: 100%;
+ }
+
+ div.information-button {
+  width: 40px;
+  align-self: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+ }
+ 
+ div.information-button img {
+   width: 100%;
+ }
